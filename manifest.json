@@ -1,0 +1,41 @@
+{
+    "name": "DaltonicGartic",
+    "version": "1.0",
+    "description": "Mostra o nome das cores disponíveis.",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://garticphone.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        },
+        {
+            "matches": [
+                "https://gartic.io/*"
+            ],
+            "js": [
+                "contentGIO.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://gartic.com.br/*"
+            ],
+            "js": [
+                "contentGNormal.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "newlogo.png"
+    }
+}
